@@ -16,7 +16,7 @@ We test our code using Python 3.6.
 
 
 ## Datasets
-The preprocessed training dataset can be downloaded from [here(password:)]().
+The preprocessed training dataset can be downloaded from [here(password:tmjX)](http://pan.iflytek.com:80/#/link/4D6FBE3B7CCCD160E5041BD9B37D4252).
 
 
 ## Train Model
@@ -53,3 +53,7 @@ The sentence-level experimental results on SIGHAN15 for the default config are a
     pages = "2437--2446",
 }
 ```
+
+## Related Work
+*[CTC 2021](https://github.com/destwang/CTC2021)
+*[CTC Resources](https://github.com/destwang/CTCResources)

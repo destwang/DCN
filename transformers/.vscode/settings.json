@@ -1,0 +1,4 @@
+{
+    "python.formatting.provider": "yapf",
+    "C_Cpp.dimInactiveRegions": false
+}

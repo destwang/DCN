@@ -55,5 +55,5 @@ The sentence-level experimental results on SIGHAN15 for the default config are a
 ```
 
 ## Related Work
-*[CTC 2021](https://github.com/destwang/CTC2021)
-*[CTC Resources](https://github.com/destwang/CTCResources)
+* [CTC 2021](https://github.com/destwang/CTC2021)
+* [CTC Resources](https://github.com/destwang/CTCResources)

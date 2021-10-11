@@ -2,6 +2,7 @@
 *.bin
 train.txt
 dcn_models/
+runs/
 
 
 # Byte-compiled / optimized / DLL files

@@ -1202,23 +1202,26 @@ class DCNForMaskedLM(BertPreTrainedModel):
                                      input_ids=input_ids,
                                      pinyin_ids=pinyin_ids)
 
-        if labels is not None:
-            trans_loss, prediction_results = self.transition(
-                prediction_scores,
-                input_ids,
-                labels,
-                sequence_output,
-                self.bert.embeddings.word_embeddings,
-                self.bert.embeddings.position_embeddings,
-                self.bert.embeddings.token_type_embeddings,
-                attention_mask,
-                topk=self.topk)
+        #if labels is not None:
+        if labels is None:
+            labels = input_ids
+
+        trans_loss, prediction_results = self.transition(
+            prediction_scores,
+            input_ids,
+            labels,
+            sequence_output,
+            self.bert.embeddings.word_embeddings,
+            self.bert.embeddings.position_embeddings,
+            self.bert.embeddings.token_type_embeddings,
+            attention_mask,
+            topk=self.topk)
 
         outputs = (prediction_scores, prediction_results)
 
-        if labels is not None:
-            masked_lm_loss = trans_loss
-            outputs = (masked_lm_loss, ) + outputs
+        #if labels is not None:
+        masked_lm_loss = trans_loss
+        outputs = (masked_lm_loss, ) + outputs
 
         return outputs  # (masked_lm_loss), prediction_scores, (hidden_states), (attentions)
 

@@ -6,7 +6,7 @@ set -e
 
 INPUT_FILE=data/sighan15/TestInput.txt
 OUTPUT_FILE=output.txt
-MODEL_DIR=dcn_models/checkpoint-8794
+MODEL_DIR=dcn_models/
 MAX_LENGTH=130
 BATCH_SIZE=4
 

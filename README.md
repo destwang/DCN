@@ -16,7 +16,7 @@ We test our code using Python 3.6.
 
 
 ## Datasets
-The preprocessed training dataset can be downloaded from [here(password:tmjX)](http://pan.iflytek.com:80/#/link/4D6FBE3B7CCCD160E5041BD9B37D4252).
+The preprocessed training dataset can be downloaded from [here(password:hfiw)](https://pan.baidu.com/s/161ae-g2A7M0KnpJI79hLWg).
 
 
 ## Train Model
